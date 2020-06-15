@@ -121,6 +121,9 @@ defmodule Waffle.Ecto.Schema do
           true ->
             fields
         end
+
+        {field, map}, fields ->
+          [{field, map}, fields]
     end)
   end
 
